@@ -1,0 +1,330 @@
+Compiled from "TaintExample.java"
+public class TaintExample implements edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag {
+  static final long serialVersionUID;
+
+  private static final java.lang.Object $$PHOSPHOR_REMOVE_SVUID;
+
+  public edu.columbia.cs.psl.phosphor.runtime.Taint PHOSPHOR_TAG;
+
+  public int $$PHOSPHOR_MARK;
+
+  public static edu.columbia.cs.psl.phosphor.runtime.Taint serialVersionUIDPHOSPHOR_TAG;
+
+  public static edu.columbia.cs.psl.phosphor.runtime.Taint $$PHOSPHOR_REMOVE_SVUIDPHOSPHOR_TAG;
+
+  public TaintExample(edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+       3: astore_2
+       4: aload_1
+       5: dup
+       6: iconst_0
+       7: invokevirtual #27                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getArgTaint:(I)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      10: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      13: astore_3
+      14: astore_3
+      15: nop
+      16: ldc           #29                 // String PhosphorArgTaintIndices=3,
+      18: pop
+      19: pop
+      20: aload_0
+      21: aload_3
+      22: astore_2
+      23: aload_1
+      24: aload_2
+      25: iconst_0
+      26: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+      29: aload_1
+      30: ldc           #34                 // int -857263373
+      32: invokevirtual #38                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.prepareForCall:(I)V
+      35: invokespecial #41                 // Method java/lang/Object."<init>":()V
+      38: aload_1
+      39: invokevirtual #44                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getReturnTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      42: pop
+      43: return
+
+  public static void main(java.lang.String[], edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+       3: astore_2
+       4: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+       7: astore_3
+       8: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      11: astore        4
+      13: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      16: astore        5
+      18: aload_1
+      19: nop
+      20: dup
+      21: iconst_0
+      22: invokevirtual #27                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getArgTaint:(I)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      25: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      28: astore        6
+      30: astore        6
+      32: dup
+      33: iconst_0
+      34: aload_0
+      35: invokevirtual #54                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getArgWrapper:(I[Ljava/lang/Object;)Ledu/columbia/cs/psl/phosphor/struct/TaggedReferenceArray;
+      38: checkcast     #56                 // class edu/columbia/cs/psl/phosphor/struct/TaggedReferenceArray
+      41: astore_0
+      42: ldc           #58                 // String PhosphorArgTaintIndices=6,
+      44: pop
+      45: pop
+      46: aload_0
+      47: aload         6
+      49: astore_2
+      50: dup
+      51: invokevirtual #62                 // Method edu/columbia/cs/psl/phosphor/struct/TaggedReferenceArray.getLength:()I
+      54: swap
+      55: invokevirtual #67                 // Method edu/columbia/cs/psl/phosphor/struct/TaggedArray.getLengthTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      58: astore_2
+      59: iconst_2
+      60: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      63: astore_3
+      64: if_icmpeq     102
+      67: getstatic     #73                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      70: getstatic     #76                 // Field java/lang/System.outPHOSPHOR_TAG:Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      73: astore_2
+      74: ldc           #78                 // String Please provide two integer arguments.
+      76: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+      79: astore_3
+      80: aload_1
+      81: aload_2
+      82: iconst_0
+      83: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+      86: aload_1
+      87: aload_3
+      88: iconst_1
+      89: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+      92: aload_1
+      93: invokevirtual #84                 // Method java/io/PrintStream.println:(Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;)V
+      96: aload_1
+      97: invokevirtual #44                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getReturnTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     100: pop
+     101: return
+     102: aload_0
+     103: aload         6
+     105: astore_2
+     106: iconst_0
+     107: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     110: astore_3
+     111: aload_3
+     112: aload_1
+     113: invokevirtual #88                 // Method edu/columbia/cs/psl/phosphor/struct/TaggedReferenceArray.get:(ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;)Ljava/lang/Object;
+     116: checkcast     #90                 // class java/lang/String
+     119: aload_1
+     120: invokevirtual #44                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getReturnTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     123: astore_2
+     124: aload_1
+     125: aload_2
+     126: iconst_0
+     127: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+     130: aload_1
+     131: invokestatic  #96                 // Method edu/columbia/cs/psl/phosphor/runtime/RuntimeBoxUnboxPropagator.parseInt:(Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;)I
+     134: aload_1
+     135: invokevirtual #44                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getReturnTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     138: astore_2
+     139: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     142: astore        8
+     144: aload_2
+     145: astore        8
+     147: istore        7
+     149: aload_0
+     150: aload         6
+     152: astore_2
+     153: iconst_1
+     154: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     157: astore_3
+     158: aload_3
+     159: aload_1
+     160: invokevirtual #88                 // Method edu/columbia/cs/psl/phosphor/struct/TaggedReferenceArray.get:(ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;)Ljava/lang/Object;
+     163: checkcast     #90                 // class java/lang/String
+     166: aload_1
+     167: invokevirtual #44                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getReturnTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     170: astore_2
+     171: aload_1
+     172: aload_2
+     173: iconst_0
+     174: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+     177: aload_1
+     178: invokestatic  #96                 // Method edu/columbia/cs/psl/phosphor/runtime/RuntimeBoxUnboxPropagator.parseInt:(Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;)I
+     181: aload_1
+     182: invokevirtual #44                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getReturnTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     185: astore_2
+     186: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     189: astore        10
+     191: aload_2
+     192: astore        10
+     194: istore        9
+     196: iload         7
+     198: aload         8
+     200: astore_2
+     201: iload         9
+     203: aload         10
+     205: astore_3
+     206: aload_2
+     207: aload_3
+     208: invokestatic  #100                // Method edu/columbia/cs/psl/phosphor/runtime/Taint.combineTags:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/runtime/Taint;)Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     211: astore_2
+     212: iadd
+     213: invokestatic  #21                 // Method edu/columbia/cs/psl/phosphor/runtime/Taint.emptyTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     216: astore        12
+     218: aload_2
+     219: astore        12
+     221: istore        11
+     223: getstatic     #73                 // Field java/lang/System.out:Ljava/io/PrintStream;
+     226: getstatic     #76                 // Field java/lang/System.outPHOSPHOR_TAG:Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     229: astore_2
+     230: iload         7
+     232: aload         8
+     234: astore_3
+     235: iload         9
+     237: aload         10
+     239: astore        4
+     241: iload         11
+     243: aload         12
+     245: astore        5
+     247: aload_1
+     248: aload_3
+     249: iconst_0
+     250: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+     253: aload_1
+     254: aload         4
+     256: iconst_1
+     257: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+     260: aload_1
+     261: aload         5
+     263: iconst_2
+     264: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+     267: aload_1
+     268: ldc           #101                // int -2081530111
+     270: invokevirtual #38                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.prepareForCall:(I)V
+     273: invokedynamic #113,  0            // InvokeDynamic #0:makeConcatWithConstants:(III)Ljava/lang/String;
+     278: aload_1
+     279: invokevirtual #44                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getReturnTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     282: astore_3
+     283: aload_1
+     284: aload_2
+     285: iconst_0
+     286: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+     289: aload_1
+     290: aload_3
+     291: iconst_1
+     292: invokevirtual #33                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.setArgTaint:(Ledu/columbia/cs/psl/phosphor/runtime/Taint;I)V
+     295: aload_1
+     296: invokevirtual #84                 // Method java/io/PrintStream.println:(Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;)V
+     299: aload_1
+     300: invokevirtual #44                 // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getReturnTaint:()Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+     303: pop
+     304: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: ldc           #130                // int 1151663667
+       2: invokestatic  #134                // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.forMethod:(I)Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;
+       5: dup
+       6: invokevirtual #138                // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getAndClearCleanupFlag:()Z
+       9: istore_2
+      10: astore_1
+      11: aload_0
+      12: aload_1
+      13: invokestatic  #140                // Method main:([Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;)V
+      16: aload_1
+      17: iload_2
+      18: invokevirtual #144                // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.popStackFrameIfNeeded:(Z)V
+      21: return
+
+  public TaintExample();
+    Code:
+       0: aload_0
+       1: ldc           #34                 // int -857263373
+       3: invokestatic  #134                // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.forMethod:(I)Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;
+       6: dup
+       7: invokevirtual #138                // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.getAndClearCleanupFlag:()Z
+      10: istore_2
+      11: astore_1
+      12: aload_1
+      13: invokespecial #146                // Method "<init>":(Ledu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame;)V
+      16: aload_1
+      17: iload_2
+      18: invokevirtual #144                // Method edu/columbia/cs/psl/phosphor/runtime/PhosphorStackFrame.popStackFrameIfNeeded:(Z)V
+      21: return
+
+  public java.lang.Class getClass(edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: aload_0
+       1: invokespecial #151                // Method getClass:()Ljava/lang/Class;
+       4: areturn
+
+  public void wait(edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: aload_0
+       1: invokespecial #154                // Method wait:()V
+       4: return
+
+  public void wait(long, edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #158                // Method wait:(J)V
+       5: return
+
+  public boolean equals(java.lang.Object, edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #163                // Method equals:(Ljava/lang/Object;)Z
+       5: ireturn
+
+  public java.lang.String toString(edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: aload_0
+       1: invokespecial #168                // Method toString:()Ljava/lang/String;
+       4: areturn
+
+  public void notify(edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: aload_0
+       1: invokespecial #171                // Method notify:()V
+       4: return
+
+  public void notifyAll(edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: aload_0
+       1: invokespecial #174                // Method notifyAll:()V
+       4: return
+
+  public int hashCode(edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: aload_0
+       1: invokespecial #178                // Method hashCode:()I
+       4: ireturn
+
+  public void wait(long, int, edu.columbia.cs.psl.phosphor.runtime.PhosphorStackFrame);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: iload_3
+       3: invokespecial #182                // Method wait:(JI)V
+       6: return
+
+  public java.lang.Object getPHOSPHOR_TAG();
+    Code:
+       0: aload_0
+       1: getfield      #186                // Field PHOSPHOR_TAG:Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+       4: areturn
+
+  public void setPHOSPHOR_TAG(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #17                 // class edu/columbia/cs/psl/phosphor/runtime/Taint
+       5: putfield      #186                // Field PHOSPHOR_TAG:Ledu/columbia/cs/psl/phosphor/runtime/Taint;
+       8: return
+
+  static {};
+    Code:
+       0: ldc           #2                  // class TaintExample
+       2: invokestatic  #195                // Method edu/columbia/cs/psl/phosphor/SourceSinkTransformer.retransform:(Ljava/lang/Class;)V
+       5: return
+}

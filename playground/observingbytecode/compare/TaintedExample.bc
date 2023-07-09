@@ -1,0 +1,40 @@
+Compiled from "TaintExample.java"
+public class TaintExample {
+  public TaintExample();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: aload_0
+       1: arraylength
+       2: iconst_2
+       3: if_icmpeq     15
+       6: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       9: ldc           #3                  // String Please provide two integer arguments.
+      11: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      14: return
+      15: aload_0
+      16: iconst_0
+      17: aaload
+      18: invokestatic  #5                  // Method java/lang/Integer.parseInt:(Ljava/lang/String;)I
+      21: istore_1
+      22: aload_0
+      23: iconst_1
+      24: aaload
+      25: invokestatic  #5                  // Method java/lang/Integer.parseInt:(Ljava/lang/String;)I
+      28: istore_2
+      29: iload_1
+      30: iload_2
+      31: iadd
+      32: istore_3
+      33: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      36: iload_1
+      37: iload_2
+      38: iload_3
+      39: invokedynamic #6,  0              // InvokeDynamic #0:makeConcatWithConstants:(III)Ljava/lang/String;
+      44: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      47: return
+}
